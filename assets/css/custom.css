@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(13, 13, 13);
+    color: #fff;
+}
+
+main {
+    height: 100vh;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+.bg-daark {
+    background-color: rgb(35, 35, 35);
+}
+
+/* sidebar */
+.sidebar {
+    height: 100vh;
+    border-right: 1px solid rgb(48, 48, 48);
+}
+
+/*  s-header  */
+.s-header .logo {
+    width: 20%;
+    height: 100%;
+}
+
+.s-header img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* block Online */
+.online-profil {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.online-profil:hover {
+    opacity: .7;
+}
+
+.online-profil:focus {
+    opacity: .7;
+}
+
+.online-profil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+/* Block Messages */
+.active {
+    background-color: rgb(51, 51, 51);
+}
+
+.disc-profil {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    transition: all .2s ease;
+}
+
+.disc-profil:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.disc-profil:focus {
+    background-color: rgb(51, 51, 51);
+}
+
+.disc-profil img {
+    width: 55px;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.disc-profil-name {
+    display: inline;
+    word-wrap: break-word;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.disc-profil-name .name {
+    color: #fff;
+    font-weight: bold;
+    padding: 0;
+}
+
+/* friend space */
+.friend-space {
+    height: 100%;
+}
+
+.friend-space-disc {
+    height: 100vh;
+}
+
+.friend-space-option {
+    height: 100vh;
+    border-left: 1px solid rgb(48, 48, 48);
+    padding-top: 50px;
+}
+
+/* friend-image */
+.friend-image {
+    width: 90px;
+    height: 90px;
+}
+
+.friend-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+/* friend space discussion */
+.space-disc-header {
+    background-color: rgba(35, 35, 35, 0.403);
+    height: 80px;
+    border-bottom: 1px solid #333;
+}
+
+.disc-header {
+    width: 100%;
+    height: auto;
+    padding: 4px;
+}
+
+.disc-header img {
+    width: 70px;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.disc-header-details {
+    display: inline;
+    word-wrap: break-word;
+    position: absolute;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.friend-name {
+    font-size: medium;
+    color: #ddd;
+    font-weight: bold;
+}
+
+/* discussionoptions */
+.disc-options {
+    padding: 25px 0px 0px 0px;
+}
+
+.disc-options .bi {
+    padding: 13px;
+    margin-left: 2px;
+    opacity: .5;
+}
+
+.disc-options .bi:hover {
+    opacity: 1;
+}
+
+/* option */
+.option {
+    padding: 15px;
+}
+
+.option .bi {
+    margin-left: 25px;
+    padding: 9px;
+    border-radius: 50px;
+    border: 2px solid rgb(79, 79, 79);
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.option .bi:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.option .bi:focus {
+    background-color: rgb(51, 51, 51);
+}
+
+/* Shared files */
+.file {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin-right: 5px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    transition: all .2s ease;
+}
+
+.file:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.file:focus {
+    background-color: rgb(51, 51, 51);
+}
+
+.file .bi {
+    font-size: 30px;
+}
+
+.file-details {
+    display: inline;
+    word-wrap: break-word;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.file-name {
+    font-size: medium;
+    color: #ddd;
+    font-weight: bold;
+}
+
+/* Discussion header */
+.discussion {
+    width: auto;
+    height: 81%;
+    overflow: auto;
+}
+
+/* friend message block */
+.friend-message-block {
+    width: 50%;
+    display: flex;
+}
+
+.friend-message-block img {
+    width: 45px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.friend-message-block .frd-message {
+    width: auto;
+}
+
+.friend-message-block .frd-message .message {
+    background: rgb(100, 100, 100, 0.708);
+    padding: 10px;
+    border-radius: 0px 25px 25px 15px;
+    width: auto;
+}
+
+/* Friend images */
+.friend-message-block .image-message {
+    width: 250px;
+    height: auto;
+}
+
+.friend-message-block .image-message img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* your message block */
+.your-message-block {
+    width: 50%;
+}
+
+.your-message-block .float {
+    float: right;
+}
+
+.your-message-block img {
+    width: 45px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.your-message-block .your-message {
+    width: 100%;
+    height: 100%;
+}
+
+.your-message-block .your-message .message {
+    float: right;
+    display: block;
+    background: rgba(100, 100, 100, 0.708);
+    padding: 10px;
+    border-radius: 25px 0px 15px 25px;
+}
+
+/* you images */
+.your-message-block .image-message {
+    width: 250px;
+    height: auto;
+}
+
+.your-message-block .image-message img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Text View */
+.text-view {
+    background-color: rgba(35, 35, 35, 0.344);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 8%;
+    border-top: 1px solid #333;
+}
+
+.text-view .my-image img {
+    width: 55px;
+    height: auto;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+}
+
+.text-view .inputMessage {
+    background-color: rgba(35, 35, 35, 0.344);
+    color: rgb(163, 163, 163);
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    border: none;
+}
+
+/* Communition Options */
+.com-options .icons {
+    margin-top: 12px;
+}
+
+.com-options .icons a,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+.com-options .bi {
+    font-size: 20px;
+    padding: 5px;
+    opacity: .4;
+    transition: all .5s ease;
+}
+
+.com-options .bi:hover {
+    font-size: 20px;
+    padding: 5px;
+    opacity: 1;
+}
+
+.com-options .bi-send-fill {
+    color: rgb(0, 8, 255);
+    opacity: 1;
+}
+
+.com-options .bi-send-fill:hover {
+    opacity: .7;
+}
